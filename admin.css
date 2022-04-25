@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --bg-color: rgb(37, 37, 37);
+    --span-color: orange;
+    --font-color: white;
+    --bg-box: rgb(45, 45, 45);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+}
+
+span{
+    color: var(--span-color);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    color: var(--font-color);
+}
+
+.title{
+    padding: 20px 30px;
+}
+
+.searching-box{
+    position: absolute;
+    padding: 30px 50px;
+    right: 0;
+    top: 0;
+}
+
+.searching-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input{
+    width: 12pc;
+    height: 1.7pc;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-btn{
+    width: 4pc;
+    height: 1.7pc;
+    border: 0;
+    border-radius: 5px;
+    background: var(--span-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+
+/* table start */
+
+.data{
+    width: 37.5%;
+    margin: 10% auto;
+}
+
+.table{
+    font-size: 1.3rem;
+    min-width: 400px;
+    border-collapse: collapse;
+}
+
+.table th, td{
+    padding: 20px 20px;
+}
+
+.table thead tr{
+    background: #3b3b3b;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.tong{
+    cursor: pointer;
+    width: 30px;
+    transition: 0.3s;
+}
+
+.tong:hover{
+    transform: rotate(15deg);
+} 
+
+.edit{
+    cursor: pointer;
+    width: 30px;
+    transition: 0.3s;
+}
+
+.edit:hover{
+    transform: rotate(15deg);
+}
+
+/* 1246 */
+
+@media (max-width: 1246px){
+    .data{
+        width: 47%;
+    }
+}
+
+/* 1010 */
+
+@media (max-width: 1010px){
+    .data{
+        width: 57%;
+    }
+}
+
+/* 761 */
+
+@media (max-width: 761px){
+    .searching-box{
+        left: -3%;
+        top: 10%;
+    }
+
+    .data{
+        width: 77%;
+        margin: 15% auto;
+    }
+}
+
+/* 630 */
+
+@media (max-width: 630px){
+    .data{
+        width: 92%;
+    }
+}
+
+/* 586 */
+
+@media (max-width: 586px){
+    .data{
+        width: 77%;
+    }
+
+    .table th, td{
+        padding: 10px 15px;
+    }
+
+    .table{
+        font-size: 17px;
+    }
+}
+
+/* 503 */
+
+@media (max-width: 503px){
+    .title{
+        font-size: 25px;
+    }
+
+    .data{
+        width: 79%;
+        margin: 25% auto;
+    }
+
+    .table th, td{
+        padding: 10px 13px;
+    }
+
+    .table{
+        font-size: 15px;
+    }
+}
+
+/* 445 */
+
+@media (max-width: 445px){
+    .title{
+        font-size: 25px;
+    }
+
+    .data{
+        width: 79%;
+        height: 100vh;
+        margin: 25% auto;
+        overflow-x: scroll;
+    }
+
+    .table th, td{
+        padding: 10px 13px;
+    }
+
+    .table{
+        font-size: 15px;
+    }
+}
+

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --bg-color: rgb(37, 37, 37);
+    --span-color: orange;
+    --font-color: white;
+    --bg-box: rgb(45, 45, 45);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    height: 190vh;
+}
+
+.title{
+    text-align: center;
+    color: var(--font-color);
+    padding-top: 30px;
+}
+
+.hero{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.kata{
+    color: var(--font-color);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+span{
+    color: var(--span-color);
+}
+
+.materi-box{
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.materi-txt{
+    color: var(--font-color);
+}
+
+.materi{
+    /* background: #000; */
+    width: 13pc;
+    height: 15pc;
+    margin-top: 2%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 180px;
+    text-align: center;
+    margin: auto;
+}
+
+.astronomi, .geografi, .ekonomi, .mtk, .psikotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.materi p{
+    color: var(--font-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-box{
+    margin: 80px auto;
+    width: 25%;
+    height: 30pc;
+    background: var(--bg-box);
+}
+
+/* form start*/
+
+.form-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--font-color);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    margin-top: 40px;
+    width: 17pc;
+    height: 2pc;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    padding-top: 40px;
+}
+
+button{
+    width: 18pc;
+    height: 2pc;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background: var(--span-color);
+    transition: 0.3s;
+}
+
+button:hover{
+    background: rgb(213, 139, 0);
+}
+
+/* 1242 */
+
+@media (max-width: 1242px){
+    .form-box{
+        width: 30%;
+        height: 30pc;
+    }
+    input{
+        width: 15pc;
+    }
+
+    button{
+        width: 16pc;
+    }
+}
+
+/* 1124 */
+
+@media (max-width: 1124px){
+    .form-box{
+        width: 35%;
+        height: 30pc;
+    }
+
+    .form{
+        text-align: center;
+    }
+
+    input{
+        width: 15pc;
+    }
+
+    button{
+        width: 16pc;
+    }
+}
+
+/* 888 */
+
+@media (max-width: 888px){
+    .form-box{
+        width: 40%;
+        height: 30pc;
+    }
+}
+
+/* 805 */
+
+@media (max-width: 805px){
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .kata{
+        font-size: 15px;
+    }
+
+    .materi-txt{
+        font-size: 1.5rem;
+    }
+
+    .form-box{
+        width: 45%;
+        height: 30pc;
+    }
+}
+
+/* 725 */
+
+@media (max-width: 725px){
+    .form-box{
+        width: 50%;
+        height: 25pc;
+    }
+
+    .form-title{
+        font-size: 1.5rem;
+    }
+
+    input{
+        width: 15pc;
+    }
+
+    button{
+        width: 16pc;
+    }
+}
+
+/* 607 */
+
+@media (max-width: 607px){
+    .form-box{
+        width: 60%;
+        height: 25pc;
+    }
+
+    .title , .materi-txt , .form-title{
+        font-size: 20px;
+    }
+
+    .kata{
+        font-size: 13px;
+    }
+}
+
+/* 475 */
+
+@media (max-width: 475px){
+    .form-box{
+        width: 65%;
+        height: 25pc;
+    }
+
+    .materi{
+        /* background: #000; */
+        width: 12pc;
+        height: 12pc;
+        padding: 1px;
+    }
+
+    img{
+        width: 160px;
+    }
+
+    .astronomi, .geografi, .ekonomi, .mtk, .psikotes{
+        margin-left: 8px;
+    }
+
+    input{
+        height: 2pc;
+        width: 14pc;
+    }
+
+    button{
+        width: 15pc;
+    }
+}
+
+/* 403 */
+
+@media (max-width: 403px){
+    .kata{
+        width: 60%;
+        margin: auto;
+    }
+
+    .form-box{
+        width: 80%;
+        height: 25pc;
+    }
+}
+
+/* 336 */
+
+@media (max-width: 336px){
+    .kata{
+        font-size: 11px;
+    }
+
+    .title , .materi-txt{
+        font-size: 15px;
+    }
+
+    .materi{
+        /* background: #000; */
+        width: 10pc;
+        height: 10pc;
+        padding: 1px;
+    }
+
+    .materi p{
+        font-size: 13px;
+    }
+
+    img{
+        width: 120px;
+    }
+
+    .astronomi, .geografi, .ekonomi, .mtk, .psikotes{
+        margin-left: 14px;
+    }
+
+    .form-box{
+        width: 90%;
+    }
+}
+
+/* 342 */
+
+@media (max-width: 342px){
+    .box{
+        width: 90%;
+    }
+}

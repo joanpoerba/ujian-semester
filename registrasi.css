@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --bg-color: rgb(37, 37, 37);
+    --span-color: orange;
+    --font-color: white;
+    --bg-box: rgb(45, 45, 45);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    color: var(--font-color);
+}
+
+span{
+    color: var(--span-color);
+}
+
+.title{
+    padding: 20px 50px;
+    font-size: 1.7rem;
+}
+
+.login-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 5pc;
+}
+
+.box{
+    margin: 80px auto;
+    width: 25%;
+    height: 55%;
+    background: var(--bg-box);
+}
+
+/* form start*/
+
+.form-title{
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    margin-top: 40px;
+    width: 17pc;
+    height: 2pc;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.btn{
+    padding-top: 40px;
+}
+
+button{
+    width: 18pc;
+    height: 2pc;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background: var(--span-color);
+    transition: 0.3s;
+}
+
+button:hover{
+    background: rgb(213, 139, 0);
+}
+
+.quote{
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* form end */
+
+
+
+/* 1242 */
+
+@media (max-width: 1242px){
+    .box{
+        height: 60%;
+    }
+
+    .form{
+        text-align: center;
+    }
+
+    input{
+        width: 15pc;
+    }
+
+    button{
+        width: 16pc;
+    }
+
+    .quote{
+        font-size: 12px;
+    }
+}
+
+/* 1124 */
+
+@media (max-width: 1124px){
+    .box{
+        width: 30%;
+        height: 60%;
+    }
+
+    .form{
+        text-align: center;
+    }
+
+    input{
+        width: 15pc;
+    }
+
+    button{
+        width: 16pc;
+    }
+
+    .quote{
+        font-size: 12px;
+    }
+}
+
+/* 920 */
+
+@media (max-width: 920px){
+    .box{
+        width: 35%;
+    }
+}
+
+/* 782 */
+
+@media (max-width: 782px){
+    .title{
+        font-size: 1.3rem;
+    }
+
+    .box{
+        width: 40%;
+    }
+}
+
+/* 690 */
+
+@media (max-width: 690px){
+    .title-box{
+        width: 84%;
+    }
+
+    .box{
+        width: 45%; 
+    }
+}
+
+/* 600 */
+
+@media (max-width: 600px){
+    .box{
+        width: 50%;
+    }
+}
+
+/* 563 */
+
+@media (max-width: 563px){
+    .box{
+        width: 60%;
+    }
+}
+
+/* 459 */
+
+@media (max-width: 459px){
+    .box{
+        width: 70%;
+    }
+}
+
+/* 400 */
+
+@media (max-width: 400px){
+    .box{
+        width: 80%;
+    }
+}
+
+/* 342 */
+
+@media (max-width: 342px){
+    .box{
+        width: 90%;
+    }
+}
